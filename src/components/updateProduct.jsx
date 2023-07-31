@@ -5,7 +5,7 @@ import {
   getProducts,
   productSelectors,
   updateProduct,
-} from "../features/productSlice";
+} from "../redux/productSlice";
 import { useParams, useNavigate } from "react-router-dom";
 
 function UpdateProduct() {

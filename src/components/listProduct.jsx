@@ -5,7 +5,7 @@ import {
   getProducts,
   productSelectors,
   deleteProducts,
-} from "../features/productSlice";
+} from "../redux/productSlice";
 import { add } from "../redux/cartSlice";
 
 function ListProduct() {
