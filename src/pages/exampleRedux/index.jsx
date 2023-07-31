@@ -5,8 +5,8 @@ import {
   getProducts,
   productSelectors,
   deleteProducts,
-} from "../redux/productSlice";
-import { add } from "../redux/cartSlice";
+} from "../../redux/productSlice";
+import { add } from "../../redux/cartSlice";
 
 function ListProduct() {
   const dispatch = useDispatch();
@@ -21,9 +21,10 @@ function ListProduct() {
 
   return (
     <>
-      <div>
+      <h1 className="text-center pb-5">Example Redux Toolkit</h1>
+      <div className="card p-3">
         <div className="d-flex justify-content-around">
-          <Link to="add" className="btn btn-success">
+          <Link to="/redux-toolkit/add" className="btn btn-success">
             Add New Product
           </Link>
           <div>Total Cart : {cardProduct.length}</div>
@@ -45,7 +46,7 @@ function ListProduct() {
                 <td>{product.price}</td>
                 <td>
                   <Link
-                    to={`update/${product.id}`}
+                    to={`/redux-toolkit/update/${product.id}`}
                     className="btn btn-primary me-2"
                   >
                     Edit

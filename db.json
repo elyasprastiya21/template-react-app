@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "title": "Baju",
-      "price": "10000",
-      "id": 2
-    },
-    {
       "title": "Celana",
       "price": "50000",
       "id": 3

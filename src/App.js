@@ -1,26 +1,32 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import ListProduct from "./components/listProduct";
-import AddProduct from "./components/addProduct";
-import UpdateProduct from "./components/updateProduct";
-import ErrorPage from "./components/errorPage";
+import ListProduct from "./pages/exampleRedux";
+import AddProduct from "./pages/exampleRedux/addProduct";
+import UpdateProduct from "./pages/exampleRedux/updateProduct";
+
+import ExampleContext from "./pages/exampleContext";
+import ErrorPage from "./components/welcome";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/redux-toolkit",
     element: <ListProduct />,
   },
   {
-    path: "/add",
+    path: "/redux-toolkit/add",
     element: <AddProduct />,
   },
   {
-    path: "/update/:id",
+    path: "/redux-toolkit/update/:id",
     element: <UpdateProduct />,
   },
   {
-    path: "/*",
+    path: "/example-context",
+    element: <ExampleContext />,
+  },
+  {
+    path: "/",
     element: <ErrorPage />,
   },
 ]);
@@ -29,7 +35,6 @@ function App() {
   return (
     <>
       <div className="m-5">
-        <h1 className="text-center">Redux Toolkit</h1>
         <RouterProvider router={router} />
       </div>
     </>
