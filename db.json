@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "title": "Baju",
+      "price": "10000",
+      "id": 2
+    },
+    {
+      "title": "Celana",
+      "price": "50000",
+      "id": 3
+    },
+    {
+      "title": "Kemeja",
+      "price": "100000",
+      "id": 4
+    },
+    {
+      "title": "testing",
+      "price": "1234",
+      "id": 5
+    }
+  ]
+}
