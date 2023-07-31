@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ListProduct from "./pages/exampleRedux";
 import AddProduct from "./pages/exampleRedux/addProduct";
 import UpdateProduct from "./pages/exampleRedux/updateProduct";
-
 import ExampleContext from "./pages/exampleContext";
-import ErrorPage from "./components/welcome";
+import ExampleReactQuery from "./pages/exampleReactQuery";
+import ErrorPage from "./pages/welcome";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/example-context",
     element: <ExampleContext />,
+  },
+  {
+    path: "/example-reactquery",
+    element: <ExampleReactQuery />,
   },
   {
     path: "/",
